@@ -13,7 +13,7 @@ Player.prototype.draw = function(){
 
 Player.prototype.checkCollision = function (e){
  
-    var collides=false;
+    var collides = false;
         //do the two bounding boxes overlap?
         if ((this.x < e.x + e.width) &&
         (this.x + this.width > e.x) &&
@@ -44,4 +44,3 @@ Player.prototype.Update = function(e)
 		this.x-=10;
 	}
 }
-
