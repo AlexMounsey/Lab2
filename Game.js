@@ -3,16 +3,16 @@ var canvas;
 var ctx;
 function Game()
 {
-	this.initCanvas();
-	player = new Player();
-	goal = new Goal();
+        this.initCanvas();
+        player = new Player();
+        goal = new Goal();
 }
 
 Game.prototype.initCanvas = function(){
 
-	 canvas= document.createElement("canvas");
+	 canvas = document.createElement("canvas");
 	 //ctx is the contex we draw on-->
-	 ctx= canvas.getContext("2d");
+	 ctx = canvas.getContext("2d");
 
 
 	 document.body.appendChild(canvas);
@@ -53,7 +53,8 @@ function rgb(r, g, b)
 /*helper function*/
 function clamp(value, min, max)
 { 
-	if(max<min) { 
+	if(max<min)
+	{ 
 		var temp = min; 
 		min = max; 
 		max = temp; 
