@@ -1,20 +1,19 @@
 function Player()
 {
-	
-	this.x= 200;
+	this.x = 200;
 	this.y = 400;
 	this.width = 100;
 	this.height = 100;
-	
 }
 
 Player.prototype.draw = function(){
-	ctx.fillStyle= rgb(55,25,100);
-	ctx.fillRect(this.x,this.y,this.width,this.height);
+	ctx.fillStyle= rgb(55, 25, 100);
+	ctx.fillRect(this.x, this.y, this.width, this.height);
 }
+
 Player.prototype.checkCollision = function (e){
  
-    var collides=false;
+    var collides = false;
         //do the two bounding boxes overlap?
         if ((this.x < e.x + e.width) &&
         (this.x + this.width > e.x) &&
@@ -45,6 +44,4 @@ Player.prototype.Update = function(e)
 	{
 		this.x-=10;
 	}
-
 }
-
